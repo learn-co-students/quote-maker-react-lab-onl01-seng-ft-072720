@@ -38,4 +38,4 @@ const QuoteCard = (props) => {
   )
 }
 
-export default QuoteCard;
+export default connect(null, { removeQuote })(QuoteCard);

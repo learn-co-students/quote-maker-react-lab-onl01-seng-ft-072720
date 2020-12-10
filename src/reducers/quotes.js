@@ -1,7 +1,11 @@
 export default (state = [], action) => {
   switch(action.type) {
-    case ("ADD_TODO"):
-      return {todo: "somethign"}
+    case ("ADD_QUOTE"):
+      return state.concat(action.quote);
+    case("REMOVE_QUOTE"):
+      debugger;
+    default:  
+      return state;
   }
-  return state;
+  
 }
